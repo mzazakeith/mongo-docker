@@ -1,7 +1,9 @@
 version: '3'
 services:
   my-app:
+#    this is when you have the image in a docker registry
 #     image: ${docker-registry}/my-app:1.0
+#    this only works if you have the image locally
      image: docker-demo-app:1.0.0
      ports:
      - 3000:3000
